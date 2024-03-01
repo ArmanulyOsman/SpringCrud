@@ -25,6 +25,10 @@
         </tbody>
     </table>
     <a class="btn btn-primary" th:href="@{/cars/new-car}">Create car</a>
+
+    <form th:method="POST" th:action="@{/cars/deleteAll">
+        <input class="btn btn-danger" type="submit" value="Delete all cars">
+    </form>
 </div>
 </body>
 </html>

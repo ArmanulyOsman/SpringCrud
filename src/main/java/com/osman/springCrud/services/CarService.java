@@ -40,4 +40,9 @@ public class CarService {
     public void delete(int id) {
         carRepository.deleteById(id);
     }
+
+    @Transactional
+    public void deleteAll(){
+        carRepository.deleteAll();
+    }
 }
